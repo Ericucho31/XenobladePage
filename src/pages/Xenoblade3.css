@@ -1,0 +1,42 @@
+.navBar {
+  height: 10vh;
+  background-color:darkgray;
+}
+
+.logo3-container {
+  display:flex;
+  background-color: none;
+  transition: all 1s;
+  opacity: 30%;
+  height: 50vh;
+  width: 100%;
+}
+
+.xenoblade3-logo {
+  margin-top: -9%;
+  margin-bottom: -10%;
+  height:100%;
+}
+
+.characters-container {
+  height: 380px;
+  display: flex;
+  padding-left: 4%;
+}
+
+.logo3-container:hover {
+  opacity: 100%;
+}
+
+.pagebody {
+  display:inline-block;
+  background-image: url("https://assets.nintendo.com/image/upload/q_60/f_auto/dpr_2.0/Microsites/Xenoblade%20Chronicles%203/ac302b04ecf3e636ac5755b0baf0ff67b785b0fd");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  text-align:center;
+  justify-items: center;
+}
+
+

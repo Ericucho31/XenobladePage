@@ -1,0 +1,112 @@
+.App {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #123456;
+}
+
+.container {
+  display: flex;
+  padding: 0;
+  margin-top: -56%;
+}
+.header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/wallpaper.png');
+  background-size: cover;
+  background-position-y:center;
+  background-attachment:local;
+  width: 100%;
+  height: 100vh;
+}
+
+.icon {
+  display: flex;
+  position:absolute;
+}
+
+.icon.lucky {
+  width: 14%;
+  padding-top: 53%;
+  padding-left: 0.5%;
+}
+
+.icon.monado {
+  width: 22%;
+  padding-top: 61%;
+  margin-left: -26%;
+}
+
+.icon.pyra {
+  width: 23%;
+  padding-top: 59%;
+  margin-left: 29.5%;
+}
+
+.icon path {
+  fill: transparent;
+  stroke-width: 40;
+
+  /*stroke-dasharray: 124900;
+  stroke-dashoffset: 124900;*/
+
+  stroke-dasharray: 0;
+  stroke-dasharray: 0;
+
+  fill-opacity: 0%;
+  transition: all 1s;
+}
+
+.icon path:hover {
+  fill-opacity: 50%;
+  animation: animate-sword 3s linear forwards;
+  animation-iteration-count: infinite;
+}
+
+.icon.monado path {
+  stroke: cyan;
+  fill: red;
+}
+
+.icon.lucky path {
+  stroke: #00b6af;
+  fill: #e11846;
+}
+
+.icon.lucky path:hover {
+  fill: #e11846;
+}
+
+.icon.pyra path {
+  stroke: #1dfdb1;
+}
+
+.icon.pyra path:hover {
+  fill:#f6180f;
+}
+
+
+@keyframes animate-sword {
+  0% {
+      stroke-dashoffset: 124900;
+      stroke-dasharray: 66543;
+      stroke-width: 40;
+      
+  }
+
+  50% {
+      stroke-dashoffset: 62500;
+      stroke-dasharray: 66543;
+  }
+
+  100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 66543;
+      stroke-width: 50;
+  }
+}
+
